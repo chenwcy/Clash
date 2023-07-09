@@ -1,6 +1,7 @@
 payload:
   - DOMAIN,emby-play.dicarerhome.com
   - DOMAIN,emby.lucasmedia.top
+  - IP-CIDR,45.9.63.198/32
   - DOMAIN,pilipili.tsukinaha.org
   - DOMAIN,陈睿.我爱你
   - DOMAIN,pilipili.muvluv.xyz
