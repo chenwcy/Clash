@@ -1,6 +1,6 @@
 payload:
   - DOMAIN,cc.ccemby.tk
-  - DOMAIN,lt2.carryz.net
+  - DOMAIN-SUFFIX,carryz.net
   - IP-CIDR,129.150.48.48/32
   - DOMAIN,emby-play.dicarerhome.com
   - DOMAIN,emby.lucasmedia.top
