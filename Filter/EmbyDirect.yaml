@@ -3,7 +3,7 @@ payload:
   - DOMAIN-SUFFIX,carryz.net
   - DOMAIN-SUFFIX,embymv.tk
   - DOMAIN,1.loseremby.org
-  - DOMAIN-SUFFIX,carryz.net
+  - DOMAIN,de.xmsl.org
   - IP-CIDR,129.150.48.48/32
   - DOMAIN,emby-play.dicarerhome.com
   - DOMAIN,emby.lucasmedia.top
