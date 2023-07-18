@@ -1,7 +1,33 @@
 payload:
-  - DOMAIN,emby.dicarerhome.com
+  - DOMAIN,cc.ccemby.tk
+  - DOMAIN-SUFFIX,carryz.net
+  - DOMAIN-SUFFIX,123456.al
+  - IP-CIDR,129.150.48.48/32
+  - DOMAIN-SUFFIX,embymv.tk
+  - DOMAIN,kr.embymv.tk
+  - DOMAIN,jp.embymv.tk
+  - DOMAIN-SUFFIX,dicarerhome.com
+  - DOMAIN,emby.lucasmedia.top
+  - IP-CIDR,45.9.63.198/32
   - DOMAIN,emby.imetyou.top
+  - DOMAIN,cf.imetyou.top
   - DOMAIN-SUFFIX,123456.al
   - DOMAIN-SUFFIX,embyplus.org
   - DOMAIN-SUFFIX,emby77.org
   - DOMAIN-SUFFIX,mius.uk
+  - DOMAIN,play.charontv.com
+  - DOMAIN-SUFFIX,infinityfly.top
+  - DOMAIN,emby.agon.cf
+  - DOMAIN,fuck.nvidia.rip
+  - DOMAIN,go.catlink.eu.org
+  - DOMAIN-SUFFIX,mcjoker.xyz
+  - DOMAIN-SUFFIX,tank66.top
+  - DOMAIN-SUFFIX,tank88.top
+  - DOMAIN-SUFFIX,xmsl.org
+  - DOMAIN,1.loseremby.org
+  - DOMAIN,4837.emby.ml
+  - DOMAIN,v.20120714.xyz
+  - DOMAIN,xl.studyfun.live
+  - DOMAIN-SUFFIX,misty.ltd
+  - DOMAIN,film.goodisp.org
+  - DOMAIN,emby.eu.org
