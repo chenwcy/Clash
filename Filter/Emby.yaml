@@ -34,3 +34,4 @@ payload:
   - DOMAIN,film.goodisp.org
   - DOMAIN,emby.eu.org
   - DOMAIN-SUFFIX,mjjemby.org
+  - DOMAIN-SUFFIX,freetz.top
