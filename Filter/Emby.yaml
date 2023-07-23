@@ -35,3 +35,5 @@ payload:
   - DOMAIN,emby.eu.org
   - DOMAIN-SUFFIX,mjjemby.org
   - DOMAIN-SUFFIX,freetz.top
+  - DOMAIN-SUFFIX,emby.ws
+  - DOMAIN-SUFFIX,9191001.xyz
