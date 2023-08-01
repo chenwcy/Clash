@@ -2,7 +2,7 @@
 # Author:https://github.com/chenwcy
 # 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
 #
-# 最后更新时间: 2023/7/14
+# 最后更新时间: 2023/7/28
 #
 # ================
 
@@ -33,75 +33,11 @@ parsers: # array
           enhanced-mode: fake-ip   # 模式：redir-host或fake-ip
           listen: 0.0.0.0:53       # DNS监听地址
           default-nameserver:      # 解析非IP的dns用的dns服务器,只支持纯IP
-               - 223.5.5.5
-               - 119.29.29.29
+             - 223.5.5.5
+             - 119.29.29.29
           fake-ip-range: 198.18.0.1/16    # Fake-IP解析地址池
-          fake-ip-filter:          # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
-             - '*.lan' 
-             - 'cable.auth.com' 
-             - '*.msftconnecttest.com' 
-             - '*.msftncsi.com' 
-             - 'network-test.debian.org'
-             - 'detectportal.firefox.com' 
-             - 'resolver1.opendns.com' 
-             - '*.srv.nintendo.net' 
-             - '*.stun.playstation.net' 
-             - 'xbox.*.microsoft.com' 
-             - '*.xboxlive.com' 
-             - 'stun.*' 
-             - 'global.turn.twilio.com' 
-             - 'global.stun.twilio.com' 
-             - 'localhost.*.qq.com' 
-             - 'localhost.*.weixin.qq.com' 
-             - '*.logon.battlenet.com.cn' 
-             - '*.logon.battle.net' 
-             - '*.blzstatic.cn' 
-             - 'music.163.com' 
-             - '*.music.163.com' 
-             - '*.126.net' 
-             - 'musicapi.taihe.com' 
-             - 'music.taihe.com' 
-             - 'songsearch.kugou.com' 
-             - 'trackercdn.kugou.com' 
-             - '*.kuwo.cn' 
-             - 'api-jooxtt.sanook.com' 
-             - 'api.joox.com' 
-             - 'joox.com' 
-             - 'y.qq.com' 
-             - '*.y.qq.com' 
-             - 'streamoc.music.tc.qq.com' 
-             - 'mobileoc.music.tc.qq.com' 
-             - 'isure.stream.qqmusic.qq.com' 
-             - 'dl.stream.qqmusic.qq.com' 
-             - 'aqqmusic.tc.qq.com' 
-             - 'amobile.music.tc.qq.com' 
-             - '*.xiami.com' 
-             - '*.music.migu.cn' 
-             - 'music.migu.cn' 
-             - 'proxy.golang.org' 
-             - '*.mcdn.bilivideo.cn' 
-             - '*.cmpassport.com' 
-             - 'id6.me' 
-             - 'open.e.189.cn' 
-             - 'mdn.open.wo.cn' 
-             - 'opencloud.wostore.cn' 
-             - 'auth.wosms.cn' 
-             - '*.jegotrip.com.cn' 
-             - '*.icitymobile.mobi' 
-             - '*.pingan.com.cn' 
-             - '*.cmbchina.com' 
-             - 'pool.ntp.org' 
-             - '*.pool.ntp.org' 
-             - 'ntp.*.com' 
-             - 'time.*.com' 
-             - 'ntp?.*.com' 
-             - 'time?.*.com' 
-             - 'time.*.gov' 
-             - 'time.*.edu.cn' 
-             - '*.ntp.org.cn' 
-             - 'PDC._msDCS.*.*' 
-             - 'DC._msDCS.*.*' 
-             - 'GC._msDCS.*.*'
+          fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com', 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+                                  # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
           nameserver:             # 默认DNS服务器，支持udp/tcp/dot/doh/doq
              - 223.5.5.5
              - 119.29.29.29
@@ -112,6 +48,9 @@ parsers: # array
             geoip: true           # 配置是否使用 geoip
             geoip-code: CN        # 当 nameserver 域名的 IP 查询 geoip 库为 CN 时，不使用 fallback 中的 DNS 查询结果
             ipcidr: [240.0.0.0/4] # 在这个网段内的 IP 地址会被考虑为被污染的 IP
+        
+        cfw-bypass: ['localhost', '*.local', 'captive.apple.com', 'e.crashlytics.com', 'sequoia.apple.com', 'seed-sequoia.siri.apple.com', 'www.baidu.com', 'passenger.t3go.cn', 'yunbusiness.ccb.com', 'wxh.wo.cn', 'gate.lagou.com', 'www.abchina.com.cn', 'login-service.mobile-bank.psbc.com', 'mobile-bank.psbc.com', '10.0.0.0/8', '100.64.0.0/10', '127.0.0.1/32', '169.254.0.0/16', '172.16.0.0/12', '192.168.0.0/16', '192.168.122.1/32', '193.168.0.1/32', '224.0.0.0/4', '240.0.0.0/4', '255.255.255.255/32', '::1/128', 'fc00::/7', 'fd00::/8', 'fe80::/10', 'ff00::/8', '2001::/32', '2001:db8::/32', '2002::/16', '::ffff:0:0:0:0/1', '::ffff:128:0:0:0/1' ]
+                                  # 系统代理跳过列表
 
       prepend-proxy-groups: # 建立策略组
 
@@ -286,12 +225,12 @@ parsers: # array
             - DIRECT
 
       commands:
-        - proxy-groups.🚀 手动切换.proxies=[]proxyNames
-        - proxy-groups.🇭🇰 香港节点.proxies=[]proxyNames|^(?!.*游戏).*(港|HK|🇭🇰)+(.*)$
-        - proxy-groups.🇺🇲 美国节点.proxies=[]proxyNames|^(?!.*游戏).*(美|US|🇺🇲|American)+(.*)$
-        - proxy-groups.🇸🇬 狮城节点.proxies=[]proxyNames|^(?!.*游戏).*(新|狮|坡|🇸🇬|SG|Singapore)+(.*)$
-        - proxy-groups.🇯🇵 日本节点.proxies=[]proxyNames|^(?!.*游戏).*(日|东京|🇯🇵|JP|Japan)+(.*)$
-        - proxy-groups.🇨🇳 台湾节点.proxies=[]proxyNames|^(?!.*游戏).*(台|湾|TW|🇨🇳|Taiwan)+(.*)$
+         - proxy-groups.🚀 手动切换.proxies=[]proxyNames
+         - proxy-groups.🇭🇰 香港节点.proxies=[]proxyNames|^(?!.*游戏).*(香港|HK|🇭🇰)+(.*)$
+         - proxy-groups.🇺🇲 美国节点.proxies=[]proxyNames|^(?!.*游戏).*(美国|US|🇺🇲|American)+(.*)$
+         - proxy-groups.🇸🇬 狮城节点.proxies=[]proxyNames|^(?!.*游戏).*(新加坡|狮城|🇸🇬|SG|Singapore)+(.*)$
+         - proxy-groups.🇯🇵 日本节点.proxies=[]proxyNames|^(?!.*游戏).*(日本|东京|🇯🇵|JP|Japan)+(.*)$
+         - proxy-groups.🇨🇳 台湾节点.proxies=[]proxyNames|^(?!.*游戏).*(台湾|TW|🇨🇳|Taiwan)+(.*)$
 
       prepend-rules: # 添加规则
          - RULE-SET,Direct,DIRECT
