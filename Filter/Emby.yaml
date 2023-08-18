@@ -24,9 +24,9 @@ payload:
   - DOMAIN-SUFFIX,mcjoker.xyz
   - DOMAIN-SUFFIX,tank66.top
   - DOMAIN-SUFFIX,tank88.top
-  - DOMAIN,cf.emby.ml
+  - DOMAIN-SUFFIX,emby.ml
   - DOMAIN-SUFFIX,xmsl.org
-  - DOMAIN,1.loseremby.org
+  - DOMAIN-SUFFIX,loseremby.org
   - DOMAIN,4837.emby.ml
   - DOMAIN,v.20120714.xyz
   - DOMAIN,xl.studyfun.live
