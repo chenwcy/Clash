@@ -41,6 +41,7 @@ payload:
   - DOMAIN-SUFFIX,magpie.cyou
   - DOMAIN-SUFFIX,lincent.org
   - DOMAIN-SUFFIX,jmsooo.com
+  - DOMAIN-SUFFIX,emby.pro
   - DOMAIN-SUFFIX,ju.dog
   - DOMAIN-SUFFIX,zi0.icu
   - IP-CIDR,150.230.233.218/32
