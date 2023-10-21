@@ -2,7 +2,7 @@
 # Author:https://github.com/Repcz
 # 以 ';' 或 '#' 或 '//' 开头的配置文件行为注释行
 #
-# 最后更新时间: 2023/8/5
+# 最后更新时间: 2023/9/1
 #
 # ================
 
@@ -58,140 +58,70 @@ parsers: # array
 
         - name: 🐟 漏网之鱼
           type: select
-          proxies:
-            - DIRECT
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
-        - name: 🎬 Emby	
+        - name: 🎬 Emby
           type: select
-          proxies:
-            - DIRECT
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [DIRECT, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🌏 国外网站
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 📹 国际媒体
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🍎 苹果服务
           type: select
-          proxies:
-            - DIRECT
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [DIRECT, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🧩 微软服务
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🌌 谷歌服务
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 📟 电报消息
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🐦 推特消息
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🤖 OpenAI
           type: select
-          proxies:
-            - 🇺🇲 美国节点
-            - 🚀 手动切换
+          proxies: [🇺🇸 美国节点, 🇯🇵 日本节点, 🇭🇰 香港节点, 🇸🇬 狮城节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 🎮 游戏平台
           type: select
-          proxies:
-            - 🚀 手动切换
-            - 🇭🇰 香港节点
-            - 🇺🇲 美国节点
-            - 🇸🇬 狮城节点
-            - 🇯🇵 日本节点
-            - 🇨🇳 台湾节点
+          proxies: [🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 狮城节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT, 🚀 手动切换, ⚠ 故障转移]
 
         - name: 📺 哔哩哔哩
           type: select
-          proxies:
-            - DIRECT
-            - 🇭🇰 香港节点
-            - 🇨🇳 台湾节点
+          proxies: [DIRECT, 🇭🇰 香港节点, 🇨🇳 台湾节点, ]
 
         - name: 🌏 国内网站
           type: select
-          proxies:
-            - DIRECT
-            - 🚀 手动切换
+          proxies: [DIRECT, 🚀 手动切换]
 
         - name: 🛑 AdBlock
           type: select
-          proxies:
-            - REJECT
-            - DIRECT
+          proxies: [REJECT, DIRECT]
+
 
         - name: 🇭🇰 香港节点
-          type: url-test # select/url-test/fallback/laod-balance
+          type: select # select/url-test/fallback/laod-balance
           url: http://www.gstatic.com/generate_204 
           interval: 300
           tolerance: 100 
           proxies:
             - DIRECT
 
-        - name: 🇺🇲 美国节点
+        - name: 🇺🇸 美国节点
           type: select # select/url-test/fallback/laod-balance
           url: http://www.gstatic.com/generate_204 
           interval: 300
@@ -208,7 +138,7 @@ parsers: # array
             - DIRECT
 
         - name: 🇯🇵 日本节点
-          type: url-test # select/url-test/fallback/laod-balance
+          type: select # select/url-test/fallback/laod-balance
           url: http://www.gstatic.com/generate_204 
           interval: 300
           tolerance: 100 
@@ -223,10 +153,19 @@ parsers: # array
           proxies:
             - DIRECT
 
+        - name: ⚠ 故障转移
+          type: fallback # select/url-test/fallback/laod-balance
+          url: http://www.gstatic.com/generate_204 
+          interval: 300
+          tolerance: 100 
+          proxies:
+            - DIRECT
+
       commands:
          - proxy-groups.🚀 手动切换.proxies=[]proxyNames
+         - proxy-groups.⚠ 故障转移.proxies=[]proxyNames
          - proxy-groups.🇭🇰 香港节点.proxies=[]proxyNames|^(?!.*游戏).*(香港|HK|🇭🇰)+(.*)$
-         - proxy-groups.🇺🇲 美国节点.proxies=[]proxyNames|^(?!.*游戏).*(美国|US|🇺🇲|American)+(.*)$
+         - proxy-groups.🇺🇸 美国节点.proxies=[]proxyNames|^(?!.*游戏).*(美国|US|🇺🇸|American)+(.*)$
          - proxy-groups.🇸🇬 狮城节点.proxies=[]proxyNames|^(?!.*游戏).*(新加坡|狮城|🇸🇬|SG|Singapore)+(.*)$
          - proxy-groups.🇯🇵 日本节点.proxies=[]proxyNames|^(?!.*游戏).*(日本|东京|🇯🇵|JP|Japan)+(.*)$
          - proxy-groups.🇨🇳 台湾节点.proxies=[]proxyNames|^(?!.*游戏).*(台湾|TW|🇨🇳|Taiwan)+(.*)$
@@ -235,7 +174,7 @@ parsers: # array
 
         Direct:           # 规则修正
           type: http
-          behavior: domain
+          behavior: classical
           url:  https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml
           path: ./ruleset/Direct.yaml
           interval: 86400
