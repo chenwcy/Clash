@@ -20,7 +20,7 @@ DOMAIN-SUFFIX,guguemby.site
 #MisakaF
 DOMAIN-SUFFIX,aca.best
 DOMAIN-SUFFIX,misakaf.org
-
+DOMAIN-SUFFIX,misakaf.workers
 #Nirvana
 DOMAIN,emby.lucasmedia.top
 IP-CIDR,45.9.63.198/32
